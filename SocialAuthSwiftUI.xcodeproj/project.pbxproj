@@ -7,14 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7ADCF128AA28100081261B /* TextTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDB28AA280F0081261B /* TextTheme.swift */; };
+		BA7ADCF228AA28100081261B /* TextTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDB28AA280F0081261B /* TextTheme.swift */; };
+		BA7ADCF328AA28100081261B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDC28AA280F0081261B /* AppColor.swift */; };
+		BA7ADCF428AA28100081261B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDC28AA280F0081261B /* AppColor.swift */; };
+		BA7ADCF528AA28100081261B /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDE28AA280F0081261B /* IconConstants.swift */; };
+		BA7ADCF628AA28100081261B /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDE28AA280F0081261B /* IconConstants.swift */; };
+		BA7ADCF728AA28100081261B /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDF28AA280F0081261B /* ImageConstants.swift */; };
+		BA7ADCF828AA28100081261B /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDF28AA280F0081261B /* ImageConstants.swift */; };
+		BA7ADCF928AA28100081261B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE028AA280F0081261B /* ButtonStyle.swift */; };
+		BA7ADCFA28AA28100081261B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE028AA280F0081261B /* ButtonStyle.swift */; };
+		BA7ADCFB28AA28100081261B /* SecureInputCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */; };
+		BA7ADCFC28AA28100081261B /* SecureInputCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */; };
+		BA7ADCFD28AA28100081261B /* AppSettingBloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE728AA28100081261B /* AppSettingBloc.swift */; };
+		BA7ADCFE28AA28100081261B /* AppSettingBloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE728AA28100081261B /* AppSettingBloc.swift */; };
+		BA7ADCFF28AA28100081261B /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */; };
+		BA7ADD0028AA28100081261B /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */; };
+		BA7ADD0128AA28100081261B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEC28AA28100081261B /* SplashScreenView.swift */; };
+		BA7ADD0228AA28100081261B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEC28AA28100081261B /* SplashScreenView.swift */; };
+		BA7ADD0328AA28100081261B /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEE28AA28100081261B /* SignInScreen.swift */; };
+		BA7ADD0428AA28100081261B /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEE28AA28100081261B /* SignInScreen.swift */; };
+		BA7ADD0528AA28100081261B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */; };
+		BA7ADD0628AA28100081261B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */; };
+		BA7ADD0928AA28660081261B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0728AA28660081261B /* AppCoordinator.swift */; };
+		BA7ADD0A28AA28660081261B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0728AA28660081261B /* AppCoordinator.swift */; };
+		BA7ADD0B28AA28660081261B /* Routes.dart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0828AA28660081261B /* Routes.dart.swift */; };
+		BA7ADD0C28AA28660081261B /* Routes.dart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0828AA28660081261B /* Routes.dart.swift */; };
 		BAC7D65028AA1DDE00C32687 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D64F28AA1DDE00C32687 /* Tests_iOS.swift */; };
 		BAC7D65228AA1DDE00C32687 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D65128AA1DDE00C32687 /* Tests_iOSLaunchTests.swift */; };
 		BAC7D65C28AA1DDF00C32687 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D65B28AA1DDF00C32687 /* Tests_macOS.swift */; };
 		BAC7D65E28AA1DDF00C32687 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D65D28AA1DDF00C32687 /* Tests_macOSLaunchTests.swift */; };
 		BAC7D65F28AA1DDF00C32687 /* SocialAuthSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */; };
 		BAC7D66028AA1DDF00C32687 /* SocialAuthSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */; };
-		BAC7D66128AA1DDF00C32687 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D63828AA1DDC00C32687 /* ContentView.swift */; };
-		BAC7D66228AA1DDF00C32687 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D63828AA1DDC00C32687 /* ContentView.swift */; };
 		BAC7D66328AA1DDF00C32687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC7D63928AA1DDE00C32687 /* Assets.xcassets */; };
 		BAC7D66428AA1DDF00C32687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC7D63928AA1DDE00C32687 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -37,8 +61,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA7ADCDB28AA280F0081261B /* TextTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTheme.swift; sourceTree = "<group>"; };
+		BA7ADCDC28AA280F0081261B /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		BA7ADCDE28AA280F0081261B /* IconConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconConstants.swift; sourceTree = "<group>"; };
+		BA7ADCDF28AA280F0081261B /* ImageConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
+		BA7ADCE028AA280F0081261B /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureInputCustom.swift; sourceTree = "<group>"; };
+		BA7ADCE728AA28100081261B /* AppSettingBloc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingBloc.swift; sourceTree = "<group>"; };
+		BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		BA7ADCEC28AA28100081261B /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		BA7ADCEE28AA28100081261B /* SignInScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		BA7ADD0728AA28660081261B /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BA7ADD0828AA28660081261B /* Routes.dart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.dart.swift; sourceTree = "<group>"; };
 		BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthSwiftUIApp.swift; sourceTree = "<group>"; };
-		BAC7D63828AA1DDC00C32687 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAC7D63928AA1DDE00C32687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAC7D63E28AA1DDE00C32687 /* SocialAuthSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialAuthSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC7D64428AA1DDE00C32687 /* SocialAuthSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialAuthSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,10 +119,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA7ADCD928AA280F0081261B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCDA28AA280F0081261B /* DesignSystem */,
+				BA7ADCDD28AA280F0081261B /* Constants */,
+				BA7ADCE128AA280F0081261B /* Components */,
+				BA7ADCE328AA280F0081261B /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BA7ADCDA28AA280F0081261B /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCDB28AA280F0081261B /* TextTheme.swift */,
+				BA7ADCDC28AA280F0081261B /* AppColor.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		BA7ADCDD28AA280F0081261B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCDE28AA280F0081261B /* IconConstants.swift */,
+				BA7ADCDF28AA280F0081261B /* ImageConstants.swift */,
+				BA7ADCE028AA280F0081261B /* ButtonStyle.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BA7ADCE128AA280F0081261B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BA7ADCE328AA280F0081261B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BA7ADCE428AA28100081261B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCE528AA28100081261B /* Shared */,
+				BA7ADCE828AA28100081261B /* Onboarding */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BA7ADCE528AA28100081261B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCE628AA28100081261B /* AppSettings */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BA7ADCE628AA28100081261B /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCE728AA28100081261B /* AppSettingBloc.swift */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		BA7ADCE828AA28100081261B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCE928AA28100081261B /* Welcome */,
+				BA7ADCEB28AA28100081261B /* SplashScreen */,
+				BA7ADCED28AA28100081261B /* SignIn */,
+				BA7ADCEF28AA28100081261B /* Onboarding */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		BA7ADCE928AA28100081261B /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		BA7ADCEB28AA28100081261B /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCEC28AA28100081261B /* SplashScreenView.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		BA7ADCED28AA28100081261B /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCEE28AA28100081261B /* SignInScreen.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		BA7ADCEF28AA28100081261B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		BAC7D63128AA1DDC00C32687 = {
 			isa = PBXGroup;
 			children = (
-				BAC7D63628AA1DDC00C32687 /* Shared */,
+				BAC7D63628AA1DDC00C32687 /* App */,
 				BAC7D64528AA1DDE00C32687 /* macOS */,
 				BAC7D64E28AA1DDE00C32687 /* Tests iOS */,
 				BAC7D65A28AA1DDF00C32687 /* Tests macOS */,
@@ -94,14 +243,17 @@
 			);
 			sourceTree = "<group>";
 		};
-		BAC7D63628AA1DDC00C32687 /* Shared */ = {
+		BAC7D63628AA1DDC00C32687 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				BA7ADCD928AA280F0081261B /* Core */,
+				BA7ADCE428AA28100081261B /* Presentation */,
 				BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */,
-				BAC7D63828AA1DDC00C32687 /* ContentView.swift */,
+				BA7ADD0728AA28660081261B /* AppCoordinator.swift */,
+				BA7ADD0828AA28660081261B /* Routes.dart.swift */,
 				BAC7D63928AA1DDE00C32687 /* Assets.xcassets */,
 			);
-			path = Shared;
+			path = App;
 			sourceTree = "<group>";
 		};
 		BAC7D63F28AA1DDE00C32687 /* Products */ = {
@@ -299,8 +451,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC7D66128AA1DDF00C32687 /* ContentView.swift in Sources */,
+				BA7ADCFD28AA28100081261B /* AppSettingBloc.swift in Sources */,
+				BA7ADCFF28AA28100081261B /* WelcomeScreen.swift in Sources */,
+				BA7ADD0928AA28660081261B /* AppCoordinator.swift in Sources */,
+				BA7ADD0B28AA28660081261B /* Routes.dart.swift in Sources */,
+				BA7ADD0528AA28100081261B /* OnboardingCoordinator.swift in Sources */,
+				BA7ADCF728AA28100081261B /* ImageConstants.swift in Sources */,
+				BA7ADD0128AA28100081261B /* SplashScreenView.swift in Sources */,
+				BA7ADD0328AA28100081261B /* SignInScreen.swift in Sources */,
+				BA7ADCF528AA28100081261B /* IconConstants.swift in Sources */,
+				BA7ADCF328AA28100081261B /* AppColor.swift in Sources */,
+				BA7ADCFB28AA28100081261B /* SecureInputCustom.swift in Sources */,
 				BAC7D65F28AA1DDF00C32687 /* SocialAuthSwiftUIApp.swift in Sources */,
+				BA7ADCF128AA28100081261B /* TextTheme.swift in Sources */,
+				BA7ADCF928AA28100081261B /* ButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +472,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC7D66228AA1DDF00C32687 /* ContentView.swift in Sources */,
+				BA7ADCFE28AA28100081261B /* AppSettingBloc.swift in Sources */,
+				BA7ADD0028AA28100081261B /* WelcomeScreen.swift in Sources */,
+				BA7ADD0A28AA28660081261B /* AppCoordinator.swift in Sources */,
+				BA7ADD0C28AA28660081261B /* Routes.dart.swift in Sources */,
+				BA7ADD0628AA28100081261B /* OnboardingCoordinator.swift in Sources */,
+				BA7ADCF828AA28100081261B /* ImageConstants.swift in Sources */,
+				BA7ADD0228AA28100081261B /* SplashScreenView.swift in Sources */,
+				BA7ADD0428AA28100081261B /* SignInScreen.swift in Sources */,
+				BA7ADCF628AA28100081261B /* IconConstants.swift in Sources */,
+				BA7ADCF428AA28100081261B /* AppColor.swift in Sources */,
+				BA7ADCFC28AA28100081261B /* SecureInputCustom.swift in Sources */,
 				BAC7D66028AA1DDF00C32687 /* SocialAuthSwiftUIApp.swift in Sources */,
+				BA7ADCF228AA28100081261B /* TextTheme.swift in Sources */,
+				BA7ADCFA28AA28100081261B /* ButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +649,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,7 +679,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
