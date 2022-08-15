@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675C4F9D28AA98A5006F936C /* SwiftUIRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 675C4F9C28AA98A5006F936C /* SwiftUIRouter */; };
+		675C4F9F28AA9B54006F936C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C4F9E28AA9B54006F936C /* AppDelegate.swift */; };
+		675C4FA028AA9B54006F936C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C4F9E28AA9B54006F936C /* AppDelegate.swift */; };
+		675C4FA228AA9E7A006F936C /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675C4FA128AA9E7A006F936C /* SplashScreen.storyboard */; };
+		675C4FA328AA9E7A006F936C /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675C4FA128AA9E7A006F936C /* SplashScreen.storyboard */; };
+		67E40F2828AAB66A00F1A49D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E40F2728AAB66A00F1A49D /* SignInViewModel.swift */; };
+		67E40F2928AAB66A00F1A49D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E40F2728AAB66A00F1A49D /* SignInViewModel.swift */; };
 		BA7ADCF128AA28100081261B /* TextTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDB28AA280F0081261B /* TextTheme.swift */; };
 		BA7ADCF228AA28100081261B /* TextTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDB28AA280F0081261B /* TextTheme.swift */; };
 		BA7ADCF328AA28100081261B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDC28AA280F0081261B /* AppColor.swift */; };
@@ -19,18 +26,12 @@
 		BA7ADCFA28AA28100081261B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE028AA280F0081261B /* ButtonStyle.swift */; };
 		BA7ADCFB28AA28100081261B /* SecureInputCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */; };
 		BA7ADCFC28AA28100081261B /* SecureInputCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */; };
-		BA7ADCFD28AA28100081261B /* AppSettingBloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE728AA28100081261B /* AppSettingBloc.swift */; };
-		BA7ADCFE28AA28100081261B /* AppSettingBloc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE728AA28100081261B /* AppSettingBloc.swift */; };
 		BA7ADCFF28AA28100081261B /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */; };
 		BA7ADD0028AA28100081261B /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */; };
-		BA7ADD0128AA28100081261B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEC28AA28100081261B /* SplashScreenView.swift */; };
-		BA7ADD0228AA28100081261B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEC28AA28100081261B /* SplashScreenView.swift */; };
 		BA7ADD0328AA28100081261B /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEE28AA28100081261B /* SignInScreen.swift */; };
 		BA7ADD0428AA28100081261B /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEE28AA28100081261B /* SignInScreen.swift */; };
 		BA7ADD0528AA28100081261B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */; };
 		BA7ADD0628AA28100081261B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */; };
-		BA7ADD0928AA28660081261B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0728AA28660081261B /* AppCoordinator.swift */; };
-		BA7ADD0A28AA28660081261B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0728AA28660081261B /* AppCoordinator.swift */; };
 		BA7ADD0B28AA28660081261B /* Routes.dart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0828AA28660081261B /* Routes.dart.swift */; };
 		BA7ADD0C28AA28660081261B /* Routes.dart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0828AA28660081261B /* Routes.dart.swift */; };
 		BAC7D65028AA1DDE00C32687 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D64F28AA1DDE00C32687 /* Tests_iOS.swift */; };
@@ -61,18 +62,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		675C4F9E28AA9B54006F936C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		675C4FA128AA9E7A006F936C /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = App/SplashScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		675C4FA428AAA05F006F936C /* SocialAuthSwiftUI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SocialAuthSwiftUI--iOS--Info.plist"; sourceTree = "<group>"; };
+		67E40F2728AAB66A00F1A49D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		BA7ADCDB28AA280F0081261B /* TextTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTheme.swift; sourceTree = "<group>"; };
 		BA7ADCDC28AA280F0081261B /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		BA7ADCDE28AA280F0081261B /* IconConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconConstants.swift; sourceTree = "<group>"; };
 		BA7ADCDF28AA280F0081261B /* ImageConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		BA7ADCE028AA280F0081261B /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureInputCustom.swift; sourceTree = "<group>"; };
-		BA7ADCE728AA28100081261B /* AppSettingBloc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingBloc.swift; sourceTree = "<group>"; };
 		BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
-		BA7ADCEC28AA28100081261B /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		BA7ADCEE28AA28100081261B /* SignInScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
 		BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
-		BA7ADD0728AA28660081261B /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		BA7ADD0828AA28660081261B /* Routes.dart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.dart.swift; sourceTree = "<group>"; };
 		BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthSwiftUIApp.swift; sourceTree = "<group>"; };
 		BAC7D63928AA1DDE00C32687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675C4F9D28AA98A5006F936C /* SwiftUIRouter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +122,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67E40F2528AAB61B00F1A49D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		67E40F2628AAB63500F1A49D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		BA7ADCD928AA280F0081261B /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,26 +184,9 @@
 		BA7ADCE428AA28100081261B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				BA7ADCE528AA28100081261B /* Shared */,
 				BA7ADCE828AA28100081261B /* Onboarding */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		BA7ADCE528AA28100081261B /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				BA7ADCE628AA28100081261B /* AppSettings */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		BA7ADCE628AA28100081261B /* AppSettings */ = {
-			isa = PBXGroup;
-			children = (
-				BA7ADCE728AA28100081261B /* AppSettingBloc.swift */,
-			);
-			path = AppSettings;
 			sourceTree = "<group>";
 		};
 		BA7ADCE828AA28100081261B /* Onboarding */ = {
@@ -211,7 +211,7 @@
 		BA7ADCEB28AA28100081261B /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
-				BA7ADCEC28AA28100081261B /* SplashScreenView.swift */,
+				675C4FA128AA9E7A006F936C /* SplashScreen.storyboard */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -220,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				BA7ADCEE28AA28100081261B /* SignInScreen.swift */,
+				67E40F2728AAB66A00F1A49D /* SignInViewModel.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -235,6 +236,7 @@
 		BAC7D63128AA1DDC00C32687 = {
 			isa = PBXGroup;
 			children = (
+				675C4FA428AAA05F006F936C /* SocialAuthSwiftUI--iOS--Info.plist */,
 				BAC7D63628AA1DDC00C32687 /* App */,
 				BAC7D64528AA1DDE00C32687 /* macOS */,
 				BAC7D64E28AA1DDE00C32687 /* Tests iOS */,
@@ -247,9 +249,11 @@
 			isa = PBXGroup;
 			children = (
 				BA7ADCD928AA280F0081261B /* Core */,
+				67E40F2628AAB63500F1A49D /* Data */,
+				67E40F2528AAB61B00F1A49D /* Domain */,
 				BA7ADCE428AA28100081261B /* Presentation */,
 				BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */,
-				BA7ADD0728AA28660081261B /* AppCoordinator.swift */,
+				675C4F9E28AA9B54006F936C /* AppDelegate.swift */,
 				BA7ADD0828AA28660081261B /* Routes.dart.swift */,
 				BAC7D63928AA1DDE00C32687 /* Assets.xcassets */,
 			);
@@ -309,6 +313,9 @@
 			dependencies = (
 			);
 			name = "SocialAuthSwiftUI (iOS)";
+			packageProductDependencies = (
+				675C4F9C28AA98A5006F936C /* SwiftUIRouter */,
+			);
 			productName = "SocialAuthSwiftUI (iOS)";
 			productReference = BAC7D63E28AA1DDE00C32687 /* SocialAuthSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -401,6 +408,9 @@
 				Base,
 			);
 			mainGroup = BAC7D63128AA1DDC00C32687;
+			packageReferences = (
+				675C4F9B28AA98A5006F936C /* XCRemoteSwiftPackageReference "SwiftUIRouter" */,
+			);
 			productRefGroup = BAC7D63F28AA1DDE00C32687 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -419,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC7D66328AA1DDF00C32687 /* Assets.xcassets in Resources */,
+				675C4FA228AA9E7A006F936C /* SplashScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC7D66428AA1DDF00C32687 /* Assets.xcassets in Resources */,
+				675C4FA328AA9E7A006F936C /* SplashScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,13 +463,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA7ADCFD28AA28100081261B /* AppSettingBloc.swift in Sources */,
 				BA7ADCFF28AA28100081261B /* WelcomeScreen.swift in Sources */,
-				BA7ADD0928AA28660081261B /* AppCoordinator.swift in Sources */,
 				BA7ADD0B28AA28660081261B /* Routes.dart.swift in Sources */,
 				BA7ADD0528AA28100081261B /* OnboardingCoordinator.swift in Sources */,
+				675C4F9F28AA9B54006F936C /* AppDelegate.swift in Sources */,
+				67E40F2828AAB66A00F1A49D /* SignInViewModel.swift in Sources */,
 				BA7ADCF728AA28100081261B /* ImageConstants.swift in Sources */,
-				BA7ADD0128AA28100081261B /* SplashScreenView.swift in Sources */,
 				BA7ADD0328AA28100081261B /* SignInScreen.swift in Sources */,
 				BA7ADCF528AA28100081261B /* IconConstants.swift in Sources */,
 				BA7ADCF328AA28100081261B /* AppColor.swift in Sources */,
@@ -472,13 +483,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA7ADCFE28AA28100081261B /* AppSettingBloc.swift in Sources */,
 				BA7ADD0028AA28100081261B /* WelcomeScreen.swift in Sources */,
-				BA7ADD0A28AA28660081261B /* AppCoordinator.swift in Sources */,
 				BA7ADD0C28AA28660081261B /* Routes.dart.swift in Sources */,
 				BA7ADD0628AA28100081261B /* OnboardingCoordinator.swift in Sources */,
+				675C4FA028AA9B54006F936C /* AppDelegate.swift in Sources */,
+				67E40F2928AAB66A00F1A49D /* SignInViewModel.swift in Sources */,
 				BA7ADCF828AA28100081261B /* ImageConstants.swift in Sources */,
-				BA7ADD0228AA28100081261B /* SplashScreenView.swift in Sources */,
 				BA7ADD0428AA28100081261B /* SignInScreen.swift in Sources */,
 				BA7ADCF628AA28100081261B /* IconConstants.swift in Sources */,
 				BA7ADCF428AA28100081261B /* AppColor.swift in Sources */,
@@ -644,9 +654,11 @@
 				DEVELOPMENT_TEAM = 86PC33ZDHF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SocialAuthSwiftUI--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -674,9 +686,11 @@
 				DEVELOPMENT_TEAM = 86PC33ZDHF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SocialAuthSwiftUI--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -901,6 +915,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		675C4F9B28AA98A5006F936C /* XCRemoteSwiftPackageReference "SwiftUIRouter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OrkhanAlikhanov/SwiftUIRouter.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		675C4F9C28AA98A5006F936C /* SwiftUIRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 675C4F9B28AA98A5006F936C /* XCRemoteSwiftPackageReference "SwiftUIRouter" */;
+			productName = SwiftUIRouter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BAC7D63228AA1DDC00C32687 /* Project object */;
 }
