@@ -10,85 +10,86 @@ import SwiftUI
 struct SignInScreen: View {
     static let routeName: String = "sign_in"
     
-    @EnvironmentObject var appSettings: AppSettingBloc
-    
     @State var username: String = ""
     @State var password: String = ""
     
     var body: some View {
-        NavigationView{
-            VStack(alignment: .leading, spacing: 0.0) {
-                Image(ImageConstant.logo)
+        VStack(alignment: .leading) {
+            Image(ImageConstant.logo)
                     .resizable()
                     .scaledToFit()
-                    .frame( width: 200)
+                
                     .padding(.bottom)
-                    
-                Text("Log in to make your memories.")
-                    .foregroundColor(AppColor.subTitle)
+                    .padding(.top, 0)
+                .frame(height: 50.0)
                 
-                TextField("Username, email or phone number", text: $username).padding(.horizontal, 8)
-                    .textfieldStylePrimary()
-                    .padding(.top, 24)
-                    .padding(.bottom, 12)
-                
-                SecureInputCustom("Password", text: $password).padding(.horizontal, 8)
-                    .textfieldStylePrimary().padding(.bottom, 16)
-                
-                Text("Forgot password?")
-                    .style(.bodySmallSemiBold)
-                    .foregroundColor(AppColor.primary)
-                    .padding(.top, 10)
-                    .padding(.bottom, 24)
-                    .frame(maxWidth: .infinity, alignment: .trailing)
-                
-                Button {
-                } label: {
-                    Text("Log In")
-                        .bold()
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(ButtonPrimary())
-                
-               
-                HStack(alignment: .center){
-                    Text("Don't have an account?").style(.bodyMedium)
-                    Text("Sign un").style(.bodyMedium).foregroundColor(AppColor.primary)
-                }.frame(maxWidth: .infinity,
-                        alignment: .center)
+            Text("Log in to make your memories.")
+                .foregroundColor(AppColor.subTitle)
+            
+            TextField("Username, email or phone number", text: $username).padding(.horizontal, 8)
+                .textfieldStylePrimary()
                 .padding(.top, 24)
-                .padding(.bottom, 32)
-                
-                HStack{
-                    Divider().frame(width:100, height: 0.5)
-                        .overlay(.gray)
-                    Text("Or login with")
-                        .style(.bodySmallSemiBold)
-                        .foregroundColor(.gray)
-                    Divider().frame(width:100, height: 0.5)
-                        .overlay(.gray)
-                }.frame(maxWidth: .infinity,
-                        minHeight: 50,
-                        alignment: .center)
-                .padding(.bottom, 20)
-                
-                HStack{
-                    renderButtonSocial(icon: IconConstant.google)
-                    renderButtonSocial(icon: IconConstant.apple)
-                    renderButtonSocial(icon: IconConstant.facebook)
-                }.frame(maxWidth: .infinity, alignment: .center)
-                .padding(.vertical, 10)
-
-
-                
-                
+                .padding(.bottom, 12)
+            
+            SecureInputCustom("Password", text: $password).padding(.horizontal, 8)
+                .textfieldStylePrimary().padding(.bottom, 16)
+            
+            Text("Forgot password?")
+                .style(.bodySmallSemiBold)
+                .foregroundColor(AppColor.primary)
+                .padding(.top, 10)
+                .padding(.bottom, 24)
+                .frame(maxWidth: .infinity, alignment: .trailing)
+            
+            Button {
+            } label: {
+                Text("Log In")
+                    .bold()
+                    .frame(maxWidth: .infinity)
             }
-            .padding(.horizontal)
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationViewStyle(StackNavigationViewStyle())
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .buttonStyle(ButtonPrimary())
+            
+           
+            HStack(alignment: .center){
+                Text("Don't have an account?")
+                    .style(.bodyMedium)
+                Text("Sign up")
+                    .style(.bodyMedium)
+                    .foregroundColor(AppColor.primary)
+            }.frame(
+                maxWidth: .infinity,
+                alignment: .center
+            )
+            .padding(.top, 24)
+            .padding(.bottom, 32)
+            
+            HStack{
+                Divider().frame(width:100, height: 0.5)
+                    .overlay(.gray)
+                Text("Or login with")
+                    .style(.bodySmallSemiBold)
+                    .foregroundColor(.gray)
+                Divider().frame(width:100, height: 0.5)
+                    .overlay(.gray)
+            }
+            .frame(
+                    maxWidth: .infinity,
+                    minHeight: 50,
+                    alignment: .center
+            )
+            .padding(.bottom, 20)
+            
+            HStack{
+                renderButtonSocial(icon: IconConstant.google)
+                renderButtonSocial(icon: IconConstant.apple)
+                renderButtonSocial(icon: IconConstant.facebook)
+            }.frame(maxWidth: .infinity, alignment: .center)
+            .padding(.vertical, 10)
             
         }
+        .padding(.horizontal)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        
     }
     
     private func renderButtonSocial(icon: String) -> some View {
