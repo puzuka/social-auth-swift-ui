@@ -2,7 +2,7 @@
 //  UserModel.swift
 //  SocialAuthSwiftUI (iOS)
 //
-//  Created by Hieu Tran on 16/08/2022.
+//  Created by Pham Tri on 16/08/2022.
 //
 
 import Foundation

@@ -2,7 +2,7 @@
 //  HomeScreen.swift
 //  SocialAuthSwiftUI
 //
-//  Created by Hieu Tran on 17/08/2022.
+//  Created by Pham Tri on 17/08/2022.
 //
 
 import SwiftUI
