@@ -62,7 +62,7 @@ struct WelcomeScreen: View {
                     .foregroundColor(AppColor.primary)
                     .style(.bodySmallSemiBold)
                     .onTapGesture {
-                        router.push(link: NavigationRouteLink.signin)
+                        router.push(link: OnboardingRoutes.signin.navigator())
                     }
             }
         }
