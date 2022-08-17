@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import SwiftUIRouter
 
 struct SignInScreen: View {
     static let routeName: String = "sign_in"
     
+    @EnvironmentObject private var viewModel: SignInViewModel
+    @Environment(\.router) var router
+    
+    @State var isBinding = false
     @State var username: String = ""
     @State var password: String = ""
     
@@ -26,13 +31,31 @@ struct SignInScreen: View {
             Text("Log in to make your memories.")
                 .foregroundColor(AppColor.subTitle)
             
-            TextField("Username, email or phone number", text: $username).padding(.horizontal, 8)
+            TextField("Username, email or phone number",
+              text: Binding(
+                get: {
+                    return self.viewModel.username
+                },
+                set: { newValue in
+                    return self.viewModel.username = newValue
+                }
+              )
+            ).padding(.horizontal, 8)
                 .textfieldStylePrimary()
                 .padding(.top, 24)
                 .padding(.bottom, 12)
             
-            SecureInputCustom("Password", text: $password).padding(.horizontal, 8)
-                .textfieldStylePrimary().padding(.bottom, 16)
+            SecureInputCustom("Password",
+              text: Binding(
+                get: {
+                    return self.viewModel.password
+                },
+                set: { newValue in
+                    return self.viewModel.password = newValue
+                }
+              )
+            ).padding(.horizontal, 8)
+            .textfieldStylePrimary().padding(.bottom, 16)
             
             Text("Forgot password?")
                 .style(.bodySmallSemiBold)
@@ -41,13 +64,16 @@ struct SignInScreen: View {
                 .padding(.bottom, 24)
                 .frame(maxWidth: .infinity, alignment: .trailing)
             
-            Button {
-            } label: {
-                Text("Log In")
-                    .bold()
-                    .frame(maxWidth: .infinity)
-            }
-            .buttonStyle(ButtonPrimary())
+            Button (
+                action: {
+                    self.viewModel.login()
+                },
+                label: {
+                    Text("Log In")
+                        .bold()
+                        .frame(maxWidth: .infinity)
+                }
+            ).buttonStyle(ButtonPrimary())
             
            
             HStack(alignment: .center){
@@ -56,6 +82,9 @@ struct SignInScreen: View {
                 Text("Sign up")
                     .style(.bodyMedium)
                     .foregroundColor(AppColor.primary)
+                    .onTapGesture {
+                        print(viewModel.isShowMessage)
+                    }
             }.frame(
                 maxWidth: .infinity,
                 alignment: .center
@@ -88,8 +117,20 @@ struct SignInScreen: View {
             
         }
         .padding(.horizontal)
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        
+        .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top)
+        .onListener(
+            bindingState: viewModel.isLoading,
+            callback: {
+                if(viewModel.userData != nil && viewModel.isDone == false){
+                    viewModel.isDone = true
+                    router.push(link: AppRoutes.home.navigator(argument: ["userInfo": viewModel.userData!]))
+                }
+            })
+        .appSnackBar(
+            isPresented: $viewModel.isShowMessage,
+            message: viewModel.messageError,
+            type: .error
+        )
     }
     
     private func renderButtonSocial(icon: String) -> some View {
@@ -109,4 +150,5 @@ struct SignInScreen_Previews: PreviewProvider {
         SignInScreen()
     }
 }
+
 
