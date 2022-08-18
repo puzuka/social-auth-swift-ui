@@ -10,7 +10,7 @@ import SwiftUIRouter
 
 struct Application: View {
     let router = NavigationRouter(routes: AppRoutes.allRoute)
-    
+
     var content: some View {
         NavigationView {
             RouterView(

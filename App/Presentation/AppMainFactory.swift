@@ -10,14 +10,14 @@ import SwiftUI
 
 class AppMainFactory{
     static func create<T>(_ type: T.Type, networkClient: NetworkClient, argument: [String : Any]? = nil) -> AnyView {
-        switch "\(type)" {
-        case "\(HomeScreen.Type.self)":
-          let userInfo = argument!["userInfo"] as! User
-          return  AnyView(HomeScreen(userInfo: userInfo))
-        case "\(ProfileScreen.Type.self)":
+        if(HomeScreen.Type.self == type){
+            let userInfo = argument!["userInfo"] as! User
+    
+            return AnyView(HomeScreen(userInfo: userInfo))
+        } else if(ProfileScreen.Type.self == type){
             return AnyView(ProfileScreen())
-        default:
-            return AnyView(EmptyView())
         }
+        
+        return AnyView(EmptyView())
     }
 }

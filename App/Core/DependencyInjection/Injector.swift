@@ -2,7 +2,7 @@
 //  Injector.swift
 //  SocialAuthSwiftUI
 //
-//  Created by Hieu Tran on 18/08/2022.
+//  Created by Pham Tri on 18/08/2022.
 //
 
 import Foundation
