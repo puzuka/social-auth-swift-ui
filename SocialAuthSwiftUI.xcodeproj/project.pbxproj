@@ -7,11 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		675C4F9D28AA98A5006F936C /* SwiftUIRouter in Frameworks */ = {isa = PBXBuildFile; productRef = 675C4F9C28AA98A5006F936C /* SwiftUIRouter */; };
-		675C4F9F28AA9B54006F936C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C4F9E28AA9B54006F936C /* AppDelegate.swift */; };
-		675C4FA028AA9B54006F936C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C4F9E28AA9B54006F936C /* AppDelegate.swift */; };
-		675C4FA228AA9E7A006F936C /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675C4FA128AA9E7A006F936C /* SplashScreen.storyboard */; };
-		675C4FA328AA9E7A006F936C /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675C4FA128AA9E7A006F936C /* SplashScreen.storyboard */; };
+		671BBB8328ABD03A00519462 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB8228ABD03A00519462 /* NetworkClient.swift */; };
+		671BBB8A28ABDB7400519462 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB8928ABDB7400519462 /* DI.swift */; };
+		671BBB8C28ABE25400519462 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB8B28ABE25400519462 /* Endpoint.swift */; };
+		671BBB8E28ABE5B800519462 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB8D28ABE5B800519462 /* LoginRequestModel.swift */; };
+		671BBB9028AC4D9F00519462 /* SocialAuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB8F28AC4D9F00519462 /* SocialAuthRepositoryImpl.swift */; };
+		671BBB9128AC4D9F00519462 /* SocialAuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB8F28AC4D9F00519462 /* SocialAuthRepositoryImpl.swift */; };
+		671BBB9328AC4DE000519462 /* SocialAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9228AC4DE000519462 /* SocialAuthRepository.swift */; };
+		671BBB9428AC4DE000519462 /* SocialAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9228AC4DE000519462 /* SocialAuthRepository.swift */; };
+		671BBB9628AC4DE900519462 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9528AC4DE900519462 /* User.swift */; };
+		671BBB9728AC4DE900519462 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9528AC4DE900519462 /* User.swift */; };
+		671BBB9928AC591B00519462 /* SocialAuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9828AC591B00519462 /* SocialAuthUseCase.swift */; };
+		671BBB9A28AC591B00519462 /* SocialAuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9828AC591B00519462 /* SocialAuthUseCase.swift */; };
+		671BBB9C28AC5BE400519462 /* AppSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9B28AC5BE400519462 /* AppSnackBar.swift */; };
+		671BBB9D28AC5BE400519462 /* AppSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9B28AC5BE400519462 /* AppSnackBar.swift */; };
+		671BBB9F28AC5E3F00519462 /* ViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9E28AC5E3F00519462 /* ViewModelExtension.swift */; };
+		671BBBA028AC5E3F00519462 /* ViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9E28AC5E3F00519462 /* ViewModelExtension.swift */; };
+		675C4F9F28AA9B54006F936C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C4F9E28AA9B54006F936C /* Application.swift */; };
+		675C4FA028AA9B54006F936C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C4F9E28AA9B54006F936C /* Application.swift */; };
+		675C4FA228AA9E7A006F936C /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675C4FA128AA9E7A006F936C /* Launch.storyboard */; };
+		675C4FA328AA9E7A006F936C /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675C4FA128AA9E7A006F936C /* Launch.storyboard */; };
+		6766CB8B28AD6930000D745D /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6766CB8A28AD6930000D745D /* Injector.swift */; };
+		6766CB8C28AD6930000D745D /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6766CB8A28AD6930000D745D /* Injector.swift */; };
+		6766CB8E28AD7556000D745D /* OnboardingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6766CB8D28AD7556000D745D /* OnboardingRoutes.swift */; };
+		6766CB8F28AD7556000D745D /* OnboardingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6766CB8D28AD7556000D745D /* OnboardingRoutes.swift */; };
+		6766CB9528AD8A35000D745D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6766CB9428AD8A35000D745D /* ProfileScreen.swift */; };
+		6766CB9628AD8A35000D745D /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6766CB9428AD8A35000D745D /* ProfileScreen.swift */; };
+		6769D68F28AE1E5E005A1E47 /* ViewPageRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769D68E28AE1E5E005A1E47 /* ViewPageRoute.swift */; };
+		6769D69028AE1E5E005A1E47 /* ViewPageRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769D68E28AE1E5E005A1E47 /* ViewPageRoute.swift */; };
+		6769D69228AE2131005A1E47 /* OnboardingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769D69128AE2131005A1E47 /* OnboardingFactory.swift */; };
+		6769D69328AE2131005A1E47 /* OnboardingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769D69128AE2131005A1E47 /* OnboardingFactory.swift */; };
+		6769D69528AE2C6F005A1E47 /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769D69428AE2C6F005A1E47 /* ErrorExtension.swift */; };
+		6769D69628AE2C6F005A1E47 /* ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769D69428AE2C6F005A1E47 /* ErrorExtension.swift */; };
+		6769D69828AE2E1B005A1E47 /* AppMainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769D69728AE2E1B005A1E47 /* AppMainFactory.swift */; };
+		6769D69928AE2E1B005A1E47 /* AppMainFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769D69728AE2E1B005A1E47 /* AppMainFactory.swift */; };
+		6769D69C28AE4645005A1E47 /* RouteExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6769D69B28AE4645005A1E47 /* RouteExtension.swift */; };
+		6784454028ACF74700E9889C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6784453F28ACF74700E9889C /* HomeScreen.swift */; };
+		6784454128ACF74700E9889C /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6784453F28ACF74700E9889C /* HomeScreen.swift */; };
+		6784454428AD05BE00E9889C /* AlertMessage in Frameworks */ = {isa = PBXBuildFile; productRef = 6784454328AD05BE00E9889C /* AlertMessage */; };
+		67C9ACAC28AACA2F00386611 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9ACAB28AACA2F00386611 /* ApiResponse.swift */; };
+		67C9ACAE28AAD51E00386611 /* SocialAuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9ACAD28AAD51E00386611 /* SocialAuthApi.swift */; };
+		67C9ACB028AAD59A00386611 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C9ACAF28AAD59A00386611 /* UserModel.swift */; };
 		67E40F2828AAB66A00F1A49D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E40F2728AAB66A00F1A49D /* SignInViewModel.swift */; };
 		67E40F2928AAB66A00F1A49D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E40F2728AAB66A00F1A49D /* SignInViewModel.swift */; };
 		BA7ADCF128AA28100081261B /* TextTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDB28AA280F0081261B /* TextTheme.swift */; };
@@ -30,10 +66,15 @@
 		BA7ADD0028AA28100081261B /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */; };
 		BA7ADD0328AA28100081261B /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEE28AA28100081261B /* SignInScreen.swift */; };
 		BA7ADD0428AA28100081261B /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCEE28AA28100081261B /* SignInScreen.swift */; };
-		BA7ADD0528AA28100081261B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */; };
-		BA7ADD0628AA28100081261B /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */; };
-		BA7ADD0B28AA28660081261B /* Routes.dart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0828AA28660081261B /* Routes.dart.swift */; };
-		BA7ADD0C28AA28660081261B /* Routes.dart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0828AA28660081261B /* Routes.dart.swift */; };
+		BA7ADD0B28AA28660081261B /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0828AA28660081261B /* Routes.swift */; };
+		BA7ADD0C28AA28660081261B /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADD0828AA28660081261B /* Routes.swift */; };
+		BAB5B1B628AB81FD00B57976 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB5B1B528AB81FD00B57976 /* HttpClient.swift */; };
+		BAB5B1B728AB81FD00B57976 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB5B1B528AB81FD00B57976 /* HttpClient.swift */; };
+		BAB5B1BC28AB843600B57976 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB5B1BB28AB843600B57976 /* NetworkError.swift */; };
+		BAB5B1BD28AB843600B57976 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB5B1BB28AB843600B57976 /* NetworkError.swift */; };
+		BAB5B1BF28AB853300B57976 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB5B1BE28AB853300B57976 /* ApiRequest.swift */; };
+		BAB5B1C028AB853300B57976 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB5B1BE28AB853300B57976 /* ApiRequest.swift */; };
+		BAB5B1C628AB8ECD00B57976 /* SwiftUIRouter in Frameworks */ = {isa = PBXBuildFile; productRef = BAB5B1C528AB8ECD00B57976 /* SwiftUIRouter */; };
 		BAC7D65028AA1DDE00C32687 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D64F28AA1DDE00C32687 /* Tests_iOS.swift */; };
 		BAC7D65228AA1DDE00C32687 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D65128AA1DDE00C32687 /* Tests_iOSLaunchTests.swift */; };
 		BAC7D65C28AA1DDF00C32687 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC7D65B28AA1DDF00C32687 /* Tests_macOS.swift */; };
@@ -62,10 +103,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		675C4F9E28AA9B54006F936C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		675C4FA128AA9E7A006F936C /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = App/SplashScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		671BBB8228ABD03A00519462 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		671BBB8928ABDB7400519462 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
+		671BBB8B28ABE25400519462 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		671BBB8D28ABE5B800519462 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
+		671BBB8F28AC4D9F00519462 /* SocialAuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthRepositoryImpl.swift; sourceTree = "<group>"; };
+		671BBB9228AC4DE000519462 /* SocialAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthRepository.swift; sourceTree = "<group>"; };
+		671BBB9528AC4DE900519462 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		671BBB9828AC591B00519462 /* SocialAuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthUseCase.swift; sourceTree = "<group>"; };
+		671BBB9B28AC5BE400519462 /* AppSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSnackBar.swift; sourceTree = "<group>"; };
+		671BBB9E28AC5E3F00519462 /* ViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelExtension.swift; sourceTree = "<group>"; };
+		675C4F9E28AA9B54006F936C /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		675C4FA128AA9E7A006F936C /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Launch.storyboard; path = App/Launch.storyboard; sourceTree = SOURCE_ROOT; };
 		675C4FA428AAA05F006F936C /* SocialAuthSwiftUI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SocialAuthSwiftUI--iOS--Info.plist"; sourceTree = "<group>"; };
+		67659AAA28AC9BF2004EFD04 /* SocialAuthSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialAuthSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67659AAB28AC9BF2004EFD04 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67659AAC28AC9BF2004EFD04 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6766CB8A28AD6930000D745D /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		6766CB8D28AD7556000D745D /* OnboardingRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRoutes.swift; sourceTree = "<group>"; };
+		6766CB9428AD8A35000D745D /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		6769D68E28AE1E5E005A1E47 /* ViewPageRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPageRoute.swift; sourceTree = "<group>"; };
+		6769D69128AE2131005A1E47 /* OnboardingFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFactory.swift; sourceTree = "<group>"; };
+		6769D69428AE2C6F005A1E47 /* ErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExtension.swift; sourceTree = "<group>"; };
+		6769D69728AE2E1B005A1E47 /* AppMainFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainFactory.swift; sourceTree = "<group>"; };
+		6769D69B28AE4645005A1E47 /* RouteExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteExtension.swift; sourceTree = "<group>"; };
+		6784453F28ACF74700E9889C /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		67C9ACAB28AACA2F00386611 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		67C9ACAD28AAD51E00386611 /* SocialAuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthApi.swift; sourceTree = "<group>"; };
+		67C9ACAF28AAD59A00386611 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		67E40F2728AAB66A00F1A49D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		67F1FCD128AC643F007A3D0F /* SocialAuthSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialAuthSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7ADCDB28AA280F0081261B /* TextTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTheme.swift; sourceTree = "<group>"; };
 		BA7ADCDC28AA280F0081261B /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		BA7ADCDE28AA280F0081261B /* IconConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconConstants.swift; sourceTree = "<group>"; };
@@ -74,17 +141,15 @@
 		BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureInputCustom.swift; sourceTree = "<group>"; };
 		BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		BA7ADCEE28AA28100081261B /* SignInScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
-		BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
-		BA7ADD0828AA28660081261B /* Routes.dart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.dart.swift; sourceTree = "<group>"; };
+		BA7ADD0828AA28660081261B /* Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		BAB5B1B528AB81FD00B57976 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		BAB5B1BB28AB843600B57976 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BAB5B1BE28AB853300B57976 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthSwiftUIApp.swift; sourceTree = "<group>"; };
 		BAC7D63928AA1DDE00C32687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BAC7D63E28AA1DDE00C32687 /* SocialAuthSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialAuthSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAC7D64428AA1DDE00C32687 /* SocialAuthSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialAuthSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC7D64628AA1DDE00C32687 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		BAC7D64B28AA1DDE00C32687 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC7D64F28AA1DDE00C32687 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		BAC7D65128AA1DDE00C32687 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
-		BAC7D65728AA1DDF00C32687 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC7D65B28AA1DDF00C32687 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		BAC7D65D28AA1DDF00C32687 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +159,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				675C4F9D28AA98A5006F936C /* SwiftUIRouter in Frameworks */,
+				BAB5B1C628AB8ECD00B57976 /* SwiftUIRouter in Frameworks */,
+				6784454428AD05BE00E9889C /* AlertMessage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,27 +188,148 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		67E40F2528AAB61B00F1A49D /* Domain */ = {
+		671BBB8828ABDB6700519462 /* DependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				671BBB8928ABDB7400519462 /* DI.swift */,
+				6766CB8A28AD6930000D745D /* Injector.swift */,
 			);
-			name = Domain;
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
-		67E40F2628AAB63500F1A49D /* Data */ = {
+		6766CB9328AD8A25000D745D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6766CB9428AD8A35000D745D /* ProfileScreen.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6769D69A28AE4632005A1E47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6769D69428AE2C6F005A1E47 /* ErrorExtension.swift */,
+				6769D69B28AE4645005A1E47 /* RouteExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6784453E28ACF73400E9889C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6784453F28ACF74700E9889C /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		67E40F2E28AAC57000F1A49D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				67E40F2F28AAC57000F1A49D /* Repository */,
+				67E40F3028AAC57000F1A49D /* UseCases */,
+				67E40F3128AAC57000F1A49D /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		67E40F2F28AAC57000F1A49D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				671BBB9228AC4DE000519462 /* SocialAuthRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		67E40F3028AAC57000F1A49D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				671BBB9828AC591B00519462 /* SocialAuthUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		67E40F3128AAC57000F1A49D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				671BBB9528AC4DE900519462 /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		67E40F3228AAC57900F1A49D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				67E40F3328AAC57900F1A49D /* DataSources */,
+				67E40F3628AAC57900F1A49D /* Repository */,
+				67E40F3728AAC57900F1A49D /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		67E40F3328AAC57900F1A49D /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				67E40F3428AAC57900F1A49D /* Local */,
+				67E40F3528AAC57900F1A49D /* Remote */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		67E40F3428AAC57900F1A49D /* Local */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Data;
+			path = Local;
 			sourceTree = "<group>";
+		};
+		67E40F3528AAC57900F1A49D /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				67C9ACAD28AAD51E00386611 /* SocialAuthApi.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		67E40F3628AAC57900F1A49D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				671BBB8F28AC4D9F00519462 /* SocialAuthRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		67E40F3728AAC57900F1A49D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BAB5B1BE28AB853300B57976 /* ApiRequest.swift */,
+				67C9ACAB28AACA2F00386611 /* ApiResponse.swift */,
+				67C9ACAF28AAD59A00386611 /* UserModel.swift */,
+				671BBB8B28ABE25400519462 /* Endpoint.swift */,
+				671BBB8D28ABE5B800519462 /* LoginRequestModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67E40F3828AAC59F00F1A49D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				671BBB8228ABD03A00519462 /* NetworkClient.swift */,
+				BAB5B1B528AB81FD00B57976 /* HttpClient.swift */,
+				BAB5B1BB28AB843600B57976 /* NetworkError.swift */,
+			);
+			name = Network;
+			path = App/Core/Network;
+			sourceTree = SOURCE_ROOT;
 		};
 		BA7ADCD928AA280F0081261B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				6769D69A28AE4632005A1E47 /* Extensions */,
+				671BBB8828ABDB6700519462 /* DependencyInjection */,
 				BA7ADCDA28AA280F0081261B /* DesignSystem */,
 				BA7ADCDD28AA280F0081261B /* Constants */,
 				BA7ADCE128AA280F0081261B /* Components */,
-				BA7ADCE328AA280F0081261B /* Services */,
+				67E40F3828AAC59F00F1A49D /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -152,6 +339,7 @@
 			children = (
 				BA7ADCDB28AA280F0081261B /* TextTheme.swift */,
 				BA7ADCDC28AA280F0081261B /* AppColor.swift */,
+				BA7ADCE028AA280F0081261B /* ButtonStyle.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -161,7 +349,6 @@
 			children = (
 				BA7ADCDE28AA280F0081261B /* IconConstants.swift */,
 				BA7ADCDF28AA280F0081261B /* ImageConstants.swift */,
-				BA7ADCE028AA280F0081261B /* ButtonStyle.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -170,21 +357,21 @@
 			isa = PBXGroup;
 			children = (
 				BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */,
+				671BBB9B28AC5BE400519462 /* AppSnackBar.swift */,
+				671BBB9E28AC5E3F00519462 /* ViewModelExtension.swift */,
+				6769D68E28AE1E5E005A1E47 /* ViewPageRoute.swift */,
 			);
 			path = Components;
-			sourceTree = "<group>";
-		};
-		BA7ADCE328AA280F0081261B /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		BA7ADCE428AA28100081261B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				6784453E28ACF73400E9889C /* Home */,
+				6766CB9328AD8A25000D745D /* Profile */,
 				BA7ADCE828AA28100081261B /* Onboarding */,
+				BA7ADD0828AA28660081261B /* Routes.swift */,
+				6769D69728AE2E1B005A1E47 /* AppMainFactory.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -193,9 +380,9 @@
 			isa = PBXGroup;
 			children = (
 				BA7ADCE928AA28100081261B /* Welcome */,
-				BA7ADCEB28AA28100081261B /* SplashScreen */,
 				BA7ADCED28AA28100081261B /* SignIn */,
-				BA7ADCEF28AA28100081261B /* Onboarding */,
+				6766CB8D28AD7556000D745D /* OnboardingRoutes.swift */,
+				6769D69128AE2131005A1E47 /* OnboardingFactory.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -208,14 +395,6 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
-		BA7ADCEB28AA28100081261B /* SplashScreen */ = {
-			isa = PBXGroup;
-			children = (
-				675C4FA128AA9E7A006F936C /* SplashScreen.storyboard */,
-			);
-			path = SplashScreen;
-			sourceTree = "<group>";
-		};
 		BA7ADCED28AA28100081261B /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,12 +404,11 @@
 			path = SignIn;
 			sourceTree = "<group>";
 		};
-		BA7ADCEF28AA28100081261B /* Onboarding */ = {
+		BAB5B1C428AB8ECD00B57976 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BA7ADCF028AA28100081261B /* OnboardingCoordinator.swift */,
 			);
-			path = Onboarding;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BAC7D63128AA1DDC00C32687 = {
@@ -241,34 +419,27 @@
 				BAC7D64528AA1DDE00C32687 /* macOS */,
 				BAC7D64E28AA1DDE00C32687 /* Tests iOS */,
 				BAC7D65A28AA1DDF00C32687 /* Tests macOS */,
-				BAC7D63F28AA1DDE00C32687 /* Products */,
+				BAB5B1C428AB8ECD00B57976 /* Frameworks */,
+				67F1FCD128AC643F007A3D0F /* SocialAuthSwiftUI.app */,
+				67659AAA28AC9BF2004EFD04 /* SocialAuthSwiftUI.app */,
+				67659AAB28AC9BF2004EFD04 /* Tests iOS.xctest */,
+				67659AAC28AC9BF2004EFD04 /* Tests macOS.xctest */,
 			);
 			sourceTree = "<group>";
 		};
 		BAC7D63628AA1DDC00C32687 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				675C4FA128AA9E7A006F936C /* Launch.storyboard */,
 				BA7ADCD928AA280F0081261B /* Core */,
-				67E40F2628AAB63500F1A49D /* Data */,
-				67E40F2528AAB61B00F1A49D /* Domain */,
+				67E40F3228AAC57900F1A49D /* Data */,
+				67E40F2E28AAC57000F1A49D /* Domain */,
 				BA7ADCE428AA28100081261B /* Presentation */,
 				BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */,
-				675C4F9E28AA9B54006F936C /* AppDelegate.swift */,
-				BA7ADD0828AA28660081261B /* Routes.dart.swift */,
+				675C4F9E28AA9B54006F936C /* Application.swift */,
 				BAC7D63928AA1DDE00C32687 /* Assets.xcassets */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		BAC7D63F28AA1DDE00C32687 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BAC7D63E28AA1DDE00C32687 /* SocialAuthSwiftUI.app */,
-				BAC7D64428AA1DDE00C32687 /* SocialAuthSwiftUI.app */,
-				BAC7D64B28AA1DDE00C32687 /* Tests iOS.xctest */,
-				BAC7D65728AA1DDF00C32687 /* Tests macOS.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		BAC7D64528AA1DDE00C32687 /* macOS */ = {
@@ -314,10 +485,11 @@
 			);
 			name = "SocialAuthSwiftUI (iOS)";
 			packageProductDependencies = (
-				675C4F9C28AA98A5006F936C /* SwiftUIRouter */,
+				BAB5B1C528AB8ECD00B57976 /* SwiftUIRouter */,
+				6784454328AD05BE00E9889C /* AlertMessage */,
 			);
 			productName = "SocialAuthSwiftUI (iOS)";
-			productReference = BAC7D63E28AA1DDE00C32687 /* SocialAuthSwiftUI.app */;
+			productReference = 67F1FCD128AC643F007A3D0F /* SocialAuthSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BAC7D64328AA1DDE00C32687 /* SocialAuthSwiftUI (macOS) */ = {
@@ -334,7 +506,7 @@
 			);
 			name = "SocialAuthSwiftUI (macOS)";
 			productName = "SocialAuthSwiftUI (macOS)";
-			productReference = BAC7D64428AA1DDE00C32687 /* SocialAuthSwiftUI.app */;
+			productReference = 67659AAA28AC9BF2004EFD04 /* SocialAuthSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BAC7D64A28AA1DDE00C32687 /* Tests iOS */ = {
@@ -352,7 +524,7 @@
 			);
 			name = "Tests iOS";
 			productName = "Tests iOS";
-			productReference = BAC7D64B28AA1DDE00C32687 /* Tests iOS.xctest */;
+			productReference = 67659AAB28AC9BF2004EFD04 /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		BAC7D65628AA1DDF00C32687 /* Tests macOS */ = {
@@ -370,7 +542,7 @@
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
-			productReference = BAC7D65728AA1DDF00C32687 /* Tests macOS.xctest */;
+			productReference = 67659AAC28AC9BF2004EFD04 /* Tests macOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -381,7 +553,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					BAC7D63D28AA1DDE00C32687 = {
 						CreatedOnToolsVersion = 13.0;
@@ -409,9 +581,10 @@
 			);
 			mainGroup = BAC7D63128AA1DDC00C32687;
 			packageReferences = (
-				675C4F9B28AA98A5006F936C /* XCRemoteSwiftPackageReference "SwiftUIRouter" */,
+				BAB5B1C328AB8DFE00B57976 /* XCRemoteSwiftPackageReference "SwiftUIRouter" */,
+				6784454228AD05BE00E9889C /* XCRemoteSwiftPackageReference "AlertMessage" */,
 			);
-			productRefGroup = BAC7D63F28AA1DDE00C32687 /* Products */;
+			productRefGroup = BAC7D63128AA1DDC00C32687;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -429,7 +602,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC7D66328AA1DDF00C32687 /* Assets.xcassets in Resources */,
-				675C4FA228AA9E7A006F936C /* SplashScreen.storyboard in Resources */,
+				675C4FA228AA9E7A006F936C /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +611,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAC7D66428AA1DDF00C32687 /* Assets.xcassets in Resources */,
-				675C4FA328AA9E7A006F936C /* SplashScreen.storyboard in Resources */,
+				675C4FA328AA9E7A006F936C /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,16 +637,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA7ADCFF28AA28100081261B /* WelcomeScreen.swift in Sources */,
-				BA7ADD0B28AA28660081261B /* Routes.dart.swift in Sources */,
-				BA7ADD0528AA28100081261B /* OnboardingCoordinator.swift in Sources */,
-				675C4F9F28AA9B54006F936C /* AppDelegate.swift in Sources */,
+				6769D69828AE2E1B005A1E47 /* AppMainFactory.swift in Sources */,
+				BA7ADD0B28AA28660081261B /* Routes.swift in Sources */,
+				67C9ACAC28AACA2F00386611 /* ApiResponse.swift in Sources */,
+				671BBB8A28ABDB7400519462 /* DI.swift in Sources */,
+				671BBB9628AC4DE900519462 /* User.swift in Sources */,
+				BAB5B1B628AB81FD00B57976 /* HttpClient.swift in Sources */,
+				671BBB9328AC4DE000519462 /* SocialAuthRepository.swift in Sources */,
+				671BBB8C28ABE25400519462 /* Endpoint.swift in Sources */,
+				675C4F9F28AA9B54006F936C /* Application.swift in Sources */,
+				67C9ACAE28AAD51E00386611 /* SocialAuthApi.swift in Sources */,
+				BAB5B1BF28AB853300B57976 /* ApiRequest.swift in Sources */,
+				6769D68F28AE1E5E005A1E47 /* ViewPageRoute.swift in Sources */,
+				6766CB8B28AD6930000D745D /* Injector.swift in Sources */,
+				671BBB9F28AC5E3F00519462 /* ViewModelExtension.swift in Sources */,
+				671BBB9928AC591B00519462 /* SocialAuthUseCase.swift in Sources */,
 				67E40F2828AAB66A00F1A49D /* SignInViewModel.swift in Sources */,
+				BAB5B1BC28AB843600B57976 /* NetworkError.swift in Sources */,
+				67C9ACB028AAD59A00386611 /* UserModel.swift in Sources */,
+				671BBB9028AC4D9F00519462 /* SocialAuthRepositoryImpl.swift in Sources */,
 				BA7ADCF728AA28100081261B /* ImageConstants.swift in Sources */,
+				671BBB8E28ABE5B800519462 /* LoginRequestModel.swift in Sources */,
 				BA7ADD0328AA28100081261B /* SignInScreen.swift in Sources */,
+				6766CB9528AD8A35000D745D /* ProfileScreen.swift in Sources */,
+				6766CB8E28AD7556000D745D /* OnboardingRoutes.swift in Sources */,
 				BA7ADCF528AA28100081261B /* IconConstants.swift in Sources */,
+				671BBB9C28AC5BE400519462 /* AppSnackBar.swift in Sources */,
+				6769D69528AE2C6F005A1E47 /* ErrorExtension.swift in Sources */,
 				BA7ADCF328AA28100081261B /* AppColor.swift in Sources */,
 				BA7ADCFB28AA28100081261B /* SecureInputCustom.swift in Sources */,
+				6769D69C28AE4645005A1E47 /* RouteExtension.swift in Sources */,
+				671BBB8328ABD03A00519462 /* NetworkClient.swift in Sources */,
+				6784454028ACF74700E9889C /* HomeScreen.swift in Sources */,
 				BAC7D65F28AA1DDF00C32687 /* SocialAuthSwiftUIApp.swift in Sources */,
+				6769D69228AE2131005A1E47 /* OnboardingFactory.swift in Sources */,
 				BA7ADCF128AA28100081261B /* TextTheme.swift in Sources */,
 				BA7ADCF928AA28100081261B /* ButtonStyle.swift in Sources */,
 			);
@@ -483,19 +680,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAB5B1BD28AB843600B57976 /* NetworkError.swift in Sources */,
 				BA7ADD0028AA28100081261B /* WelcomeScreen.swift in Sources */,
-				BA7ADD0C28AA28660081261B /* Routes.dart.swift in Sources */,
-				BA7ADD0628AA28100081261B /* OnboardingCoordinator.swift in Sources */,
-				675C4FA028AA9B54006F936C /* AppDelegate.swift in Sources */,
+				6769D69928AE2E1B005A1E47 /* AppMainFactory.swift in Sources */,
+				671BBB9428AC4DE000519462 /* SocialAuthRepository.swift in Sources */,
+				BA7ADD0C28AA28660081261B /* Routes.swift in Sources */,
+				675C4FA028AA9B54006F936C /* Application.swift in Sources */,
 				67E40F2928AAB66A00F1A49D /* SignInViewModel.swift in Sources */,
+				6766CB8C28AD6930000D745D /* Injector.swift in Sources */,
+				671BBB9728AC4DE900519462 /* User.swift in Sources */,
 				BA7ADCF828AA28100081261B /* ImageConstants.swift in Sources */,
+				6769D69328AE2131005A1E47 /* OnboardingFactory.swift in Sources */,
 				BA7ADD0428AA28100081261B /* SignInScreen.swift in Sources */,
+				671BBBA028AC5E3F00519462 /* ViewModelExtension.swift in Sources */,
 				BA7ADCF628AA28100081261B /* IconConstants.swift in Sources */,
+				671BBB9A28AC591B00519462 /* SocialAuthUseCase.swift in Sources */,
 				BA7ADCF428AA28100081261B /* AppColor.swift in Sources */,
+				BAB5B1B728AB81FD00B57976 /* HttpClient.swift in Sources */,
 				BA7ADCFC28AA28100081261B /* SecureInputCustom.swift in Sources */,
 				BAC7D66028AA1DDF00C32687 /* SocialAuthSwiftUIApp.swift in Sources */,
+				6769D69028AE1E5E005A1E47 /* ViewPageRoute.swift in Sources */,
 				BA7ADCF228AA28100081261B /* TextTheme.swift in Sources */,
+				BAB5B1C028AB853300B57976 /* ApiRequest.swift in Sources */,
+				671BBB9D28AC5BE400519462 /* AppSnackBar.swift in Sources */,
+				6766CB9628AD8A35000D745D /* ProfileScreen.swift in Sources */,
+				6784454128ACF74700E9889C /* HomeScreen.swift in Sources */,
+				671BBB9128AC4D9F00519462 /* SocialAuthRepositoryImpl.swift in Sources */,
 				BA7ADCFA28AA28100081261B /* ButtonStyle.swift in Sources */,
+				6769D69628AE2C6F005A1E47 /* ErrorExtension.swift in Sources */,
+				6766CB8F28AD7556000D745D /* OnboardingRoutes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,10 +868,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SocialAuthSwiftUI--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Social Auth SwiftUI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -667,7 +881,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialauth.SocialAuthSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialAuthSwiftUI;
 				PRODUCT_NAME = SocialAuthSwiftUI;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -687,10 +901,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SocialAuthSwiftUI--iOS--Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Social Auth SwiftUI";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -699,7 +914,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialauth.SocialAuthSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialAuthSwiftUI;
 				PRODUCT_NAME = SocialAuthSwiftUI;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -715,6 +930,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -729,7 +945,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialauth.SocialAuthSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialauth;
 				PRODUCT_NAME = SocialAuthSwiftUI;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -743,6 +959,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -757,7 +974,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialauth.SocialAuthSwiftUI;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialauth;
 				PRODUCT_NAME = SocialAuthSwiftUI;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -917,20 +1134,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		675C4F9B28AA98A5006F936C /* XCRemoteSwiftPackageReference "SwiftUIRouter" */ = {
+		6784454228AD05BE00E9889C /* XCRemoteSwiftPackageReference "AlertMessage" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/OrkhanAlikhanov/SwiftUIRouter.git";
+			repositoryURL = "https://github.com/danielkmarks23/AlertMessage.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
 			};
 		};
+		BAB5B1C328AB8DFE00B57976 /* XCRemoteSwiftPackageReference "SwiftUIRouter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/puzuka/SwiftUIRouter";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		675C4F9C28AA98A5006F936C /* SwiftUIRouter */ = {
+		6784454328AD05BE00E9889C /* AlertMessage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 675C4F9B28AA98A5006F936C /* XCRemoteSwiftPackageReference "SwiftUIRouter" */;
+			package = 6784454228AD05BE00E9889C /* XCRemoteSwiftPackageReference "AlertMessage" */;
+			productName = AlertMessage;
+		};
+		BAB5B1C528AB8ECD00B57976 /* SwiftUIRouter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BAB5B1C328AB8DFE00B57976 /* XCRemoteSwiftPackageReference "SwiftUIRouter" */;
 			productName = SwiftUIRouter;
 		};
 /* End XCSwiftPackageProductDependency section */
