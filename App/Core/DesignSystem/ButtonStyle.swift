@@ -8,26 +8,15 @@
 import Foundation
 import SwiftUI
 
-struct ButtonPrimary: ButtonStyle {
+struct ButtonStyleDefault: ButtonStyle {
+    let color: Color
+    
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .padding()
             .foregroundColor(.white)
-            .background(AppColor.primary)
+            .background(color)
             .scaleEffect(configuration.isPressed ? 1.1 : 1.0)
             .cornerRadius(12)
-    }
-}
-
-
-struct ButtonSecondary: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .padding()
-            .foregroundColor(.white)
-            .background(AppColor.secondary)
-            .scaleEffect(configuration.isPressed ? 1.1 : 1.0)
-            .cornerRadius(12)
-            
     }
 }

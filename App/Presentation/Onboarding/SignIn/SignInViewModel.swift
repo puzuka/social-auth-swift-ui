@@ -12,7 +12,7 @@ class SignInViewModel: ObservableObject{
     let usecase: SocialAuthUseCase
     
     @Published var userData: User? = nil
-    @Published var username: String = "PuzDev@gmail.coms"
+    @Published var username: String = "PuzDev@gmail.com"
     @Published var password: String = "123456"
     @Published var isShowMessage: Bool = false
     @Published var isDone: Bool = false

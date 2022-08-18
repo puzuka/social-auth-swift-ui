@@ -11,6 +11,7 @@ import SwiftUIRouter
 struct SignInScreen: View {
     @EnvironmentObject private var viewModel: SignInViewModel
     @Environment(\.router) var router
+    @Environment(\.theme) var theme
     
     @State var isBinding = false
     @State var username: String = ""
@@ -18,7 +19,7 @@ struct SignInScreen: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Image(ImageConstant.logo)
+            Image(theme.image.logo)
                     .resizable()
                     .scaledToFit()
                 
@@ -27,7 +28,7 @@ struct SignInScreen: View {
                 .frame(height: 50.0)
                 
             Text("Log in to make your memories.")
-                .foregroundColor(AppColor.subTitle)
+                .foregroundColor(theme.color.subTitle)
             
             TextField("Username, email or phone number",
               text: Binding(
@@ -40,6 +41,7 @@ struct SignInScreen: View {
               )
             ).padding(.horizontal, 8)
                 .textfieldStylePrimary()
+                .background(theme.color.secondary)
                 .padding(.top, 24)
                 .padding(.bottom, 12)
             
@@ -53,33 +55,31 @@ struct SignInScreen: View {
                 }
               )
             ).padding(.horizontal, 8)
-            .textfieldStylePrimary().padding(.bottom, 16)
+            .textfieldStylePrimary()
+            .background(theme.color.secondary)
+            .padding(.bottom, 16)
             
             Text("Forgot password?")
                 .style(.bodySmallSemiBold)
-                .foregroundColor(AppColor.primary)
+                .foregroundColor(theme.color.primary)
                 .padding(.top, 10)
                 .padding(.bottom, 24)
                 .frame(maxWidth: .infinity, alignment: .trailing)
             
-            Button (
-                action: {
-                    self.viewModel.login()
-                },
-                label: {
-                    Text("Log In")
-                        .bold()
-                        .frame(maxWidth: .infinity)
-                }
-            ).buttonStyle(ButtonPrimary())
-            
+            ButtonTheme(label: {
+                Text("Log In")
+                    .bold()
+                    .frame(maxWidth: .infinity)
+            }, action: {
+                self.viewModel.login()
+            })
            
             HStack(alignment: .center){
                 Text("Don't have an account?")
                     .style(.bodyMedium)
                 Text("Sign up")
                     .style(.bodyMedium)
-                    .foregroundColor(AppColor.primary)
+                    .foregroundColor(theme.color.primary)
                     .onTapGesture {
                         print(viewModel.isShowMessage)
                     }
@@ -107,15 +107,16 @@ struct SignInScreen: View {
             .padding(.bottom, 20)
             
             HStack{
-                renderButtonSocial(icon: IconConstant.google)
-                renderButtonSocial(icon: IconConstant.apple)
-                renderButtonSocial(icon: IconConstant.facebook)
+                renderButtonSocial(icon: theme.icon.google)
+                renderButtonSocial(icon: theme.icon.apple)
+                renderButtonSocial(icon: theme.icon.facebook)
             }.frame(maxWidth: .infinity, alignment: .center)
             .padding(.vertical, 10)
             
         }
         .padding(.horizontal)
-        .frame(maxWidth: .infinity, maxHeight: .infinity,alignment: .top)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .edgesIgnoringSafeArea(.all)
         .onListener(
             bindingState: viewModel.isLoading,
             callback: {
@@ -135,7 +136,6 @@ struct SignInScreen: View {
         return Image(icon)
             .padding(.vertical, 16)
             .padding(.horizontal, 24)
-            .background(AppColor.secondary)
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(Color.gray.opacity(0.3), lineWidth: 1))
