@@ -9,26 +9,23 @@ import SwiftUI
 import SwiftUIRouter
 
 struct Application: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     let router = NavigationRouter(routes: AppRoutes.allRoute)
-
+    
     var content: some View {
         NavigationView {
             RouterView(
                 router: router,
                 root: router.getNavigator(OnboardingRoutes.welcome.routeName)
             )
-            .padding(.vertical, 45)
-            .edgesIgnoringSafeArea(.top)
+            .edgesIgnoringSafeArea(.all)
         }
         .environment(\.router, router)
+        .environment(\.theme, ThemeSettings(colorScheme))
         .navigationViewStyle(StackNavigationViewStyle())
+
     }
     
-    var body: some View { content }
-}
-
-struct Application_Previews: PreviewProvider {
-    static var previews: some View {
-        Application()
-    }
+    var body: some View { content}
 }

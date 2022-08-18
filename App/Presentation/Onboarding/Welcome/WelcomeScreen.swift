@@ -10,38 +10,48 @@ import SwiftUIRouter
 
 struct WelcomeScreen: View {    
     @Environment(\.router) var router
+    @Environment(\.theme) var theme
     
     var body: some View {
-        VStack{
-            Image(ImageConstant.logo)
-                .padding(.bottom, 50)
-                .frame(width: 0.0,height: 40.0)
+        VStack(alignment: .center){
+            Image(theme.image.logo)
+                .resizable()
+                .scaledToFit()
+                .frame(maxWidth: .infinity, maxHeight: 20.0, alignment: .center)
+                .padding(.bottom, 30)
             
-            Image(ImageConstant.signin)
             
-            Button {
-            } label: {
-                ZStack {
-                    Image(ImageConstant.google)
-                        .frame(maxWidth: .infinity, minHeight: 0, alignment: .leading)
-                    Text("Login with Google")
-                        .style(.bodyMedium)
-                        .frame(maxWidth: .infinity)
-                }
-            }
-            .buttonStyle(ButtonPrimary())
+            Image(theme.image.signin)
+                .resizable()
+                .scaledToFit()
+                .padding(.horizontal, 16)
+                
+            ButtonTheme (
+                label: {
+                    ZStack {
+                        Image(theme.image.google)
+                            .frame(maxWidth: .infinity, minHeight: 0, alignment: .leading)
+                        Text("Login with Google")
+                            .style(.bodyMedium)
+                            .frame(maxWidth: .infinity)
+                    }
+                },
+                action: {}
+            )
             .frame(maxHeight: 52)
             .padding(.top, 40.0)
             
-            Button {
-            } label: {
-                Text("Sign up with email or phone number")
-                    .style(.bodyMedium)
-                    .foregroundColor(AppColor.primary)
-                    .frame(maxWidth: .infinity)
+            ButtonTheme (
+                label: {
+                    Text("Sign up with email or phone number")
+                        .style(.bodyMedium)
+                        .foregroundColor(theme.color.primary)
+                        .frame(maxWidth: .infinity)
                     
-            }.padding(.top, 16.0)
-            .buttonStyle(ButtonSecondary())
+                },
+                action: {},
+                isPrimary: false
+            ).padding(.top, 16.0)
             .frame(maxHeight: 52)
             
             HStack{
@@ -57,7 +67,7 @@ struct WelcomeScreen: View {
             HStack{
                 Text("Already have an account?").style(.bodySmallRegular)
                 Text("Sign in")
-                    .foregroundColor(AppColor.primary)
+                    .foregroundColor(theme.color.primary)
                     .style(.bodySmallSemiBold)
                     .onTapGesture {
                         router.pushNamed(OnboardingRoutes.signin.routeName)

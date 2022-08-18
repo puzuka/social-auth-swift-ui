@@ -23,6 +23,16 @@
 		671BBB9D28AC5BE400519462 /* AppSnackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9B28AC5BE400519462 /* AppSnackBar.swift */; };
 		671BBB9F28AC5E3F00519462 /* ViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9E28AC5E3F00519462 /* ViewModelExtension.swift */; };
 		671BBBA028AC5E3F00519462 /* ViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671BBB9E28AC5E3F00519462 /* ViewModelExtension.swift */; };
+		6743E77228AE84C200F993FF /* ThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E77128AE84C200F993FF /* ThemeSettings.swift */; };
+		6743E77328AE84C200F993FF /* ThemeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E77128AE84C200F993FF /* ThemeSettings.swift */; };
+		6743E77528AE857600F993FF /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E77428AE857600F993FF /* AppImage.swift */; };
+		6743E77628AE857600F993FF /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E77428AE857600F993FF /* AppImage.swift */; };
+		6743E77828AE89A300F993FF /* ButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E77728AE89A300F993FF /* ButtonTheme.swift */; };
+		6743E77928AE89A300F993FF /* ButtonTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E77728AE89A300F993FF /* ButtonTheme.swift */; };
+		6743E78028AE8DF400F993FF /* EnviromentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E77F28AE8DF400F993FF /* EnviromentExtension.swift */; };
+		6743E78128AE8DF400F993FF /* EnviromentExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E77F28AE8DF400F993FF /* EnviromentExtension.swift */; };
+		6743E78328AE9C9900F993FF /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E78228AE9C9900F993FF /* AppIcon.swift */; };
+		6743E78428AE9C9900F993FF /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743E78228AE9C9900F993FF /* AppIcon.swift */; };
 		675C4F9F28AA9B54006F936C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C4F9E28AA9B54006F936C /* Application.swift */; };
 		675C4FA028AA9B54006F936C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675C4F9E28AA9B54006F936C /* Application.swift */; };
 		675C4FA228AA9E7A006F936C /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675C4FA128AA9E7A006F936C /* Launch.storyboard */; };
@@ -56,8 +66,6 @@
 		BA7ADCF428AA28100081261B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDC28AA280F0081261B /* AppColor.swift */; };
 		BA7ADCF528AA28100081261B /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDE28AA280F0081261B /* IconConstants.swift */; };
 		BA7ADCF628AA28100081261B /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDE28AA280F0081261B /* IconConstants.swift */; };
-		BA7ADCF728AA28100081261B /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDF28AA280F0081261B /* ImageConstants.swift */; };
-		BA7ADCF828AA28100081261B /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDF28AA280F0081261B /* ImageConstants.swift */; };
 		BA7ADCF928AA28100081261B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE028AA280F0081261B /* ButtonStyle.swift */; };
 		BA7ADCFA28AA28100081261B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE028AA280F0081261B /* ButtonStyle.swift */; };
 		BA7ADCFB28AA28100081261B /* SecureInputCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */; };
@@ -113,6 +121,11 @@
 		671BBB9828AC591B00519462 /* SocialAuthUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialAuthUseCase.swift; sourceTree = "<group>"; };
 		671BBB9B28AC5BE400519462 /* AppSnackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSnackBar.swift; sourceTree = "<group>"; };
 		671BBB9E28AC5E3F00519462 /* ViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelExtension.swift; sourceTree = "<group>"; };
+		6743E77128AE84C200F993FF /* ThemeSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettings.swift; sourceTree = "<group>"; };
+		6743E77428AE857600F993FF /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		6743E77728AE89A300F993FF /* ButtonTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTheme.swift; sourceTree = "<group>"; };
+		6743E77F28AE8DF400F993FF /* EnviromentExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentExtension.swift; sourceTree = "<group>"; };
+		6743E78228AE9C9900F993FF /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
 		675C4F9E28AA9B54006F936C /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		675C4FA128AA9E7A006F936C /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Launch.storyboard; path = App/Launch.storyboard; sourceTree = SOURCE_ROOT; };
 		675C4FA428AAA05F006F936C /* SocialAuthSwiftUI--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SocialAuthSwiftUI--iOS--Info.plist"; sourceTree = "<group>"; };
@@ -136,7 +149,6 @@
 		BA7ADCDB28AA280F0081261B /* TextTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTheme.swift; sourceTree = "<group>"; };
 		BA7ADCDC28AA280F0081261B /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		BA7ADCDE28AA280F0081261B /* IconConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconConstants.swift; sourceTree = "<group>"; };
-		BA7ADCDF28AA280F0081261B /* ImageConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
 		BA7ADCE028AA280F0081261B /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureInputCustom.swift; sourceTree = "<group>"; };
 		BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
@@ -197,6 +209,14 @@
 			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
+		6743E77A28AE8A4400F993FF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6743E77128AE84C200F993FF /* ThemeSettings.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		6766CB9328AD8A25000D745D /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +230,7 @@
 			children = (
 				6769D69428AE2C6F005A1E47 /* ErrorExtension.swift */,
 				6769D69B28AE4645005A1E47 /* RouteExtension.swift */,
+				6743E77F28AE8DF400F993FF /* EnviromentExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,7 +349,7 @@
 				671BBB8828ABDB6700519462 /* DependencyInjection */,
 				BA7ADCDA28AA280F0081261B /* DesignSystem */,
 				BA7ADCDD28AA280F0081261B /* Constants */,
-				BA7ADCE128AA280F0081261B /* Components */,
+				BA7ADCE128AA280F0081261B /* Views */,
 				67E40F3828AAC59F00F1A49D /* Network */,
 			);
 			path = Core;
@@ -338,8 +359,10 @@
 			isa = PBXGroup;
 			children = (
 				BA7ADCDB28AA280F0081261B /* TextTheme.swift */,
-				BA7ADCDC28AA280F0081261B /* AppColor.swift */,
 				BA7ADCE028AA280F0081261B /* ButtonStyle.swift */,
+				BA7ADCDC28AA280F0081261B /* AppColor.swift */,
+				6743E77428AE857600F993FF /* AppImage.swift */,
+				6743E78228AE9C9900F993FF /* AppIcon.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -348,25 +371,26 @@
 			isa = PBXGroup;
 			children = (
 				BA7ADCDE28AA280F0081261B /* IconConstants.swift */,
-				BA7ADCDF28AA280F0081261B /* ImageConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		BA7ADCE128AA280F0081261B /* Components */ = {
+		BA7ADCE128AA280F0081261B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6743E77728AE89A300F993FF /* ButtonTheme.swift */,
 				BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */,
 				671BBB9B28AC5BE400519462 /* AppSnackBar.swift */,
 				671BBB9E28AC5E3F00519462 /* ViewModelExtension.swift */,
 				6769D68E28AE1E5E005A1E47 /* ViewPageRoute.swift */,
 			);
-			path = Components;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		BA7ADCE428AA28100081261B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				6743E77A28AE8A4400F993FF /* Shared */,
 				6784453E28ACF73400E9889C /* Home */,
 				6766CB9328AD8A25000D745D /* Profile */,
 				BA7ADCE828AA28100081261B /* Onboarding */,
@@ -435,8 +459,8 @@
 				67E40F3228AAC57900F1A49D /* Data */,
 				67E40F2E28AAC57000F1A49D /* Domain */,
 				BA7ADCE428AA28100081261B /* Presentation */,
-				BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */,
 				675C4F9E28AA9B54006F936C /* Application.swift */,
+				BAC7D63728AA1DDC00C32687 /* SocialAuthSwiftUIApp.swift */,
 				BAC7D63928AA1DDE00C32687 /* Assets.xcassets */,
 			);
 			path = App;
@@ -650,20 +674,24 @@
 				BAB5B1BF28AB853300B57976 /* ApiRequest.swift in Sources */,
 				6769D68F28AE1E5E005A1E47 /* ViewPageRoute.swift in Sources */,
 				6766CB8B28AD6930000D745D /* Injector.swift in Sources */,
+				6743E78028AE8DF400F993FF /* EnviromentExtension.swift in Sources */,
 				671BBB9F28AC5E3F00519462 /* ViewModelExtension.swift in Sources */,
 				671BBB9928AC591B00519462 /* SocialAuthUseCase.swift in Sources */,
 				67E40F2828AAB66A00F1A49D /* SignInViewModel.swift in Sources */,
 				BAB5B1BC28AB843600B57976 /* NetworkError.swift in Sources */,
 				67C9ACB028AAD59A00386611 /* UserModel.swift in Sources */,
+				6743E77828AE89A300F993FF /* ButtonTheme.swift in Sources */,
+				6743E77228AE84C200F993FF /* ThemeSettings.swift in Sources */,
 				671BBB9028AC4D9F00519462 /* SocialAuthRepositoryImpl.swift in Sources */,
-				BA7ADCF728AA28100081261B /* ImageConstants.swift in Sources */,
 				671BBB8E28ABE5B800519462 /* LoginRequestModel.swift in Sources */,
 				BA7ADD0328AA28100081261B /* SignInScreen.swift in Sources */,
 				6766CB9528AD8A35000D745D /* ProfileScreen.swift in Sources */,
 				6766CB8E28AD7556000D745D /* OnboardingRoutes.swift in Sources */,
+				6743E77528AE857600F993FF /* AppImage.swift in Sources */,
 				BA7ADCF528AA28100081261B /* IconConstants.swift in Sources */,
 				671BBB9C28AC5BE400519462 /* AppSnackBar.swift in Sources */,
 				6769D69528AE2C6F005A1E47 /* ErrorExtension.swift in Sources */,
+				6743E78328AE9C9900F993FF /* AppIcon.swift in Sources */,
 				BA7ADCF328AA28100081261B /* AppColor.swift in Sources */,
 				BA7ADCFB28AA28100081261B /* SecureInputCustom.swift in Sources */,
 				6769D69C28AE4645005A1E47 /* RouteExtension.swift in Sources */,
@@ -684,27 +712,31 @@
 				BA7ADD0028AA28100081261B /* WelcomeScreen.swift in Sources */,
 				6769D69928AE2E1B005A1E47 /* AppMainFactory.swift in Sources */,
 				671BBB9428AC4DE000519462 /* SocialAuthRepository.swift in Sources */,
+				6743E78128AE8DF400F993FF /* EnviromentExtension.swift in Sources */,
 				BA7ADD0C28AA28660081261B /* Routes.swift in Sources */,
 				675C4FA028AA9B54006F936C /* Application.swift in Sources */,
 				67E40F2928AAB66A00F1A49D /* SignInViewModel.swift in Sources */,
 				6766CB8C28AD6930000D745D /* Injector.swift in Sources */,
+				6743E77628AE857600F993FF /* AppImage.swift in Sources */,
 				671BBB9728AC4DE900519462 /* User.swift in Sources */,
-				BA7ADCF828AA28100081261B /* ImageConstants.swift in Sources */,
 				6769D69328AE2131005A1E47 /* OnboardingFactory.swift in Sources */,
 				BA7ADD0428AA28100081261B /* SignInScreen.swift in Sources */,
 				671BBBA028AC5E3F00519462 /* ViewModelExtension.swift in Sources */,
 				BA7ADCF628AA28100081261B /* IconConstants.swift in Sources */,
 				671BBB9A28AC591B00519462 /* SocialAuthUseCase.swift in Sources */,
+				6743E77328AE84C200F993FF /* ThemeSettings.swift in Sources */,
 				BA7ADCF428AA28100081261B /* AppColor.swift in Sources */,
 				BAB5B1B728AB81FD00B57976 /* HttpClient.swift in Sources */,
 				BA7ADCFC28AA28100081261B /* SecureInputCustom.swift in Sources */,
 				BAC7D66028AA1DDF00C32687 /* SocialAuthSwiftUIApp.swift in Sources */,
 				6769D69028AE1E5E005A1E47 /* ViewPageRoute.swift in Sources */,
 				BA7ADCF228AA28100081261B /* TextTheme.swift in Sources */,
+				6743E78428AE9C9900F993FF /* AppIcon.swift in Sources */,
 				BAB5B1C028AB853300B57976 /* ApiRequest.swift in Sources */,
 				671BBB9D28AC5BE400519462 /* AppSnackBar.swift in Sources */,
 				6766CB9628AD8A35000D745D /* ProfileScreen.swift in Sources */,
 				6784454128ACF74700E9889C /* HomeScreen.swift in Sources */,
+				6743E77928AE89A300F993FF /* ButtonTheme.swift in Sources */,
 				671BBB9128AC4D9F00519462 /* SocialAuthRepositoryImpl.swift in Sources */,
 				BA7ADCFA28AA28100081261B /* ButtonStyle.swift in Sources */,
 				6769D69628AE2C6F005A1E47 /* ErrorExtension.swift in Sources */,

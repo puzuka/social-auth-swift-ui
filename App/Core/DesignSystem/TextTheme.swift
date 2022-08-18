@@ -75,9 +75,7 @@ extension View {
     func textfieldStylePrimary() -> some View {
         return self
             .padding(.horizontal, 15)
-            .frame(height: 40.0)
-            .background(AppColor.secondary)
-            .overlay(
+            .frame(height: 40.0)            .overlay(
                 RoundedRectangle(cornerRadius: 5)
                  .stroke(Color.gray.opacity(0.3), lineWidth: 1))
     }
