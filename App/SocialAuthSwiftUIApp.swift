@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct SocialAuthSwiftUIApp: App {
+
     init(){
         DependencyInjection().inject()
     }

@@ -8,9 +8,7 @@
 import SwiftUI
 import SwiftUIRouter
 
-struct WelcomeScreen: View {
-    static let routeName: String = "welcome"
-    
+struct WelcomeScreen: View {    
     @Environment(\.router) var router
     
     var body: some View {
@@ -62,7 +60,7 @@ struct WelcomeScreen: View {
                     .foregroundColor(AppColor.primary)
                     .style(.bodySmallSemiBold)
                     .onTapGesture {
-                        router.push(link: OnboardingRoutes.signin.navigator())
+                        router.pushNamed(OnboardingRoutes.signin.routeName)
                     }
             }
         }

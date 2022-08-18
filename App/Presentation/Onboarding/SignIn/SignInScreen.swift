@@ -9,8 +9,6 @@ import SwiftUI
 import SwiftUIRouter
 
 struct SignInScreen: View {
-    static let routeName: String = "sign_in"
-    
     @EnvironmentObject private var viewModel: SignInViewModel
     @Environment(\.router) var router
     
@@ -123,7 +121,7 @@ struct SignInScreen: View {
             callback: {
                 if(viewModel.userData != nil && viewModel.isDone == false){
                     viewModel.isDone = true
-                    router.push(link: AppRoutes.home.navigator(argument: ["userInfo": viewModel.userData!]))
+                    router.pushNamed(AppRoutes.home.routeName, argument:["userInfo": viewModel.userData!])
                 }
             })
         .appSnackBar(

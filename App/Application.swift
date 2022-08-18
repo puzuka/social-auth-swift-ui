@@ -9,13 +9,13 @@ import SwiftUI
 import SwiftUIRouter
 
 struct Application: View {
-    let router = NavigationRouter(routes: .all)
-    
+    let router = NavigationRouter(routes: AppRoutes.allRoute)
+
     var content: some View {
         NavigationView {
             RouterView(
                 router: router,
-                root: OnboardingRoutes.welcome.navigator()
+                root: router.getNavigator(OnboardingRoutes.welcome.routeName)
             )
             .padding(.vertical, 45)
             .edgesIgnoringSafeArea(.top)

@@ -7,36 +7,42 @@
 
 import SwiftUIRouter
 
-extension Array where Element == NavigationRoute {
-    static var all: [NavigationRoute] {
-        
-        return AppRoutes.allRoute
-        + OnboardingRoutes.allRoute
-    }
-}
-
-enum AppRoutes: String{
+enum AppRoutes: String, RouteName{
     case home = "/home"
     case profile = "/profile"
+    
+    var routeName: String {
+        return self.rawValue
+    }
 }
 
 extension AppRoutes {
-    func navigator(argument: [String : Any]?) -> NavigationRouteLink {
-        switch self {
-        case .home:
-            return NavigationRouteLink(path: self.rawValue,  meta: argument!)
-        case .profile:
-            return NavigationRouteLink(path: self.rawValue)
-        }
+    static var allRoute: [NavigationRoute] {
+        return routesScreen
+        + OnboardingRoutes.allRoute
     }
     
-    static var allRoute: [NavigationRoute] {
-        let home = NavigationRoute(path: AppRoutes.home.rawValue) { routeSetting in
-            HomeScreen(userInfo: routeSetting.link.meta["userInfo"] as! User)
+    static var routesScreen: [NavigationRoute] {
+        let homeRoute = NavigationRoute(path: home.routeName) { routeSetting in
+            ViewPageRoute(
+                viewBuilder: AppMainFactory.create(
+                    HomeScreen.Type.self,
+                    networkClient: injector.get(),
+                    argument: routeSetting.link.meta
+                )
+            )
         }
         
-        let profile = NavigationRoute(path: AppRoutes.profile.rawValue, destination: ProfileScreen())
+        let profileRoute = NavigationRoute(path: profile.routeName) {
+            ViewPageRoute(
+                viewBuilder: AppMainFactory.create(
+                    ProfileScreen.Type.self,
+                    networkClient: injector.get()
+                )
+            )
+        }
         
-        return [ home, profile ]
+        return [ homeRoute, profileRoute ]
+
     }
 }

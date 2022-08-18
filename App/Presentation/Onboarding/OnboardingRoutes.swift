@@ -8,39 +8,35 @@
 import Foundation
 import SwiftUIRouter
 
-enum OnboardingRoutes: String{
+public enum OnboardingRoutes: String, RouteName{
     case signin = "/signin"
     case welcome = "/welcome"
+    
+    var routeName: String {
+        return self.rawValue
+    }
 }
 
 extension OnboardingRoutes {
-    func navigator(argument: [String : Any]? = nil) -> NavigationRouteLink {
-        switch self {
-        case .signin:
-            return NavigationRouteLink(path: self.rawValue)
-        case .welcome:
-            return NavigationRouteLink(path: self.rawValue)
-        }
-    }
-    
    static var allRoute: [NavigationRoute] {
-        let welcome = NavigationRoute(path: welcome.rawValue, destination: WelcomeScreen())
-        
-        let signin = NavigationRoute(path: signin.rawValue) { route in
-            SignInScreen()
-                .provideViewModel(
-                    create: {
-                        SignInViewModel(
-                            usecase: SocialAuthUseCase(
-                                repository: SocialAuthRepositoryImpl(
-                                    socialAuthApi: SocialAuthApiImpl(networkClient: injector.get())
-                                )
-                            )
-                        )
-                    }
+        let welcomeRoute = NavigationRoute(path: welcome.routeName){
+           ViewPageRoute(
+                viewBuilder: OnboardingFactory.create(
+                    WelcomeScreen.Type.self,
+                    networkClient: injector.get()
                 )
+           )
         }
         
-        return [ welcome, signin ]
+        let signinRoute = NavigationRoute(path: signin.routeName) {
+            ViewPageRoute(
+                viewBuilder: OnboardingFactory.create(
+                    SignInScreen.Type.self,
+                    networkClient: injector.get()
+                )
+            )
+        }
+        
+        return [ welcomeRoute, signinRoute ]
     }
 }
