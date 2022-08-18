@@ -64,8 +64,6 @@
 		BA7ADCF228AA28100081261B /* TextTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDB28AA280F0081261B /* TextTheme.swift */; };
 		BA7ADCF328AA28100081261B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDC28AA280F0081261B /* AppColor.swift */; };
 		BA7ADCF428AA28100081261B /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDC28AA280F0081261B /* AppColor.swift */; };
-		BA7ADCF528AA28100081261B /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDE28AA280F0081261B /* IconConstants.swift */; };
-		BA7ADCF628AA28100081261B /* IconConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCDE28AA280F0081261B /* IconConstants.swift */; };
 		BA7ADCF928AA28100081261B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE028AA280F0081261B /* ButtonStyle.swift */; };
 		BA7ADCFA28AA28100081261B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE028AA280F0081261B /* ButtonStyle.swift */; };
 		BA7ADCFB28AA28100081261B /* SecureInputCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */; };
@@ -148,7 +146,6 @@
 		67F1FCD128AC643F007A3D0F /* SocialAuthSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialAuthSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7ADCDB28AA280F0081261B /* TextTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTheme.swift; sourceTree = "<group>"; };
 		BA7ADCDC28AA280F0081261B /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
-		BA7ADCDE28AA280F0081261B /* IconConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconConstants.swift; sourceTree = "<group>"; };
 		BA7ADCE028AA280F0081261B /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		BA7ADCE228AA280F0081261B /* SecureInputCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureInputCustom.swift; sourceTree = "<group>"; };
 		BA7ADCEA28AA28100081261B /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
@@ -370,7 +367,6 @@
 		BA7ADCDD28AA280F0081261B /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				BA7ADCDE28AA280F0081261B /* IconConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -688,7 +684,6 @@
 				6766CB9528AD8A35000D745D /* ProfileScreen.swift in Sources */,
 				6766CB8E28AD7556000D745D /* OnboardingRoutes.swift in Sources */,
 				6743E77528AE857600F993FF /* AppImage.swift in Sources */,
-				BA7ADCF528AA28100081261B /* IconConstants.swift in Sources */,
 				671BBB9C28AC5BE400519462 /* AppSnackBar.swift in Sources */,
 				6769D69528AE2C6F005A1E47 /* ErrorExtension.swift in Sources */,
 				6743E78328AE9C9900F993FF /* AppIcon.swift in Sources */,
@@ -722,7 +717,6 @@
 				6769D69328AE2131005A1E47 /* OnboardingFactory.swift in Sources */,
 				BA7ADD0428AA28100081261B /* SignInScreen.swift in Sources */,
 				671BBBA028AC5E3F00519462 /* ViewModelExtension.swift in Sources */,
-				BA7ADCF628AA28100081261B /* IconConstants.swift in Sources */,
 				671BBB9A28AC591B00519462 /* SocialAuthUseCase.swift in Sources */,
 				6743E77328AE84C200F993FF /* ThemeSettings.swift in Sources */,
 				BA7ADCF428AA28100081261B /* AppColor.swift in Sources */,
@@ -895,7 +889,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 86PC33ZDHF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -912,7 +906,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialAuthSwiftUI;
 				PRODUCT_NAME = SocialAuthSwiftUI;
 				SDKROOT = iphoneos;
@@ -928,7 +922,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 86PC33ZDHF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -945,7 +939,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = vn.fighttech.socialAuthSwiftUI;
 				PRODUCT_NAME = SocialAuthSwiftUI;
 				SDKROOT = iphoneos;
