@@ -8,7 +8,7 @@ This repository contains all source code flutter for the project.
 -  Language: SwiftUI 5
 - IDE:  Xcode
 - Deployment target
-    -  iOS: `10.0+.`
+    -  iOS: `13.0+.`
 - Device Orientation: Portrail (primary)
 - Standard design: iPhone XS (375x812 @3x)
 - flavor: n/a (development | production)
