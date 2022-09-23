@@ -15,7 +15,7 @@ This repository contains all source code flutter for the project.
 
 # Architecture
 
-Apply Clean Architecture + MVVM (with BloC used to replace the traditional ViewModel).
+Apply Clean Architecture + MVVM (with ViewModel used to replace the traditional ViewModel).
 
 ```
 |-----------------  Layers  ------------------|
@@ -39,13 +39,13 @@ Apply Clean Architecture + MVVM (with BloC used to replace the traditional ViewM
    - Epic
    - Shared UI
 - UI Layout can be Stateless or Stateful depending on its intended use and scope.
-- UI Layout listens to the State that BloC sends and displays based on that data
-- With Shared UI, it is located in the `presentation/shared/` folder. Depending on the purpose of use, it comes with a BloC (grouped in a feature folder) or is only placed individually and uses a certain Shared BloC.
+- UI Layout listens to the State that ViewModel sends and displays based on that data
+- With Shared UI, it is located in the `App/Presentation/Shared/` folder. Depending on the purpose of use, it comes with a ViewModel (grouped in a feature folder) or is only placed individually and uses a certain Shared ViewModel.
 
-### BloC
+### ViewModel
 - It aims to handle business logic for a specific view such as validation, retrieve data, ...
-- BloC uses use-case to retrieve data or handle domain business logic
-- BloC listens to events from UI Layout -> handles logic and returns results to UI Layout with specific State
+- ViewModel uses use-case to retrieve data or handle domain business logic
+- ViewModel listens to events from UI Layout -> handles logic and returns results to UI Layout with specific State
 
 ### UseCase
 - It's the main layer to handle all data business
@@ -76,7 +76,7 @@ Apply Clean Architecture + MVVM (with BloC used to replace the traditional ViewM
 - Entity is belong to UI layer, it defines all utility methods of an entity
 
 ## Dependencies Injection
-- There are kinds of class to support construct instance for DI là Service, BloC, UseCases Repository,...
+- There are kinds of class to support construct instance for DI là Service, ViewModel, UseCases Repository,...
 - Simple direct Service Locator that allows to decouple the interface from a concrete implementation and to access the concrete implementation from everywhere in your App
 
 
@@ -84,7 +84,7 @@ Apply Clean Architecture + MVVM (with BloC used to replace the traditional ViewM
 
 |                      |                                                                                                                                                                                  |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| State management     | `Combine`<br> that make it easy to implement the ViewModel design pattern. Built to be used with the bloc state management package.         |
+| State management     | `Combine`<br> that make it easy to implement the ViewModel design pattern. Built to be used with the ViewModel state management package.         |
 | Reactive programming | Combine is an implementation of the popular reactiveX api for asynchronous programming, leveraging the native Swift Streams api.                                                      |
 | Testing Framework    | TODO: Mockingbird |                              |
 | Networking           | URLSession is network client |
