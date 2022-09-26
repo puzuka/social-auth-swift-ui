@@ -30,7 +30,8 @@ Apply Clean Architecture + MVVM (with ViewModel used to replace the traditional 
 |:----       Entity         ----|----       Model      --------:|
 |:-------------------------------------------------------------:|
 ```
-![image](https://user-images.githubusercontent.com/13028582/186032061-21c60ce0-da97-45e0-9e2e-15f9f6fc89d2.png)
+![diagram-architecture](https://user-images.githubusercontent.com/13028582/192195548-69a082dc-1c78-4407-b36c-66d692cb6aa9.png)
+
 
 
 ### UI
